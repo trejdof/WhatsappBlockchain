@@ -1,23 +1,32 @@
-WhatsApp Chat Parser for Transaction Tracking
-Overview
-This is a simple app designed to parse a WhatsApp chat used as a decentralized ledger for tracking transactions between people. For years, dedicated group chats on WhatsApp were used to record who paid for what, allowing for end-of-month calculations to determine who owes whom.
+# WhatsApp Chat Parser for Transaction Tracking
 
-This app automates that process by parsing exported chat data and summing the amounts written in messages. It simplifies the task of recalculating balances between group members at the end of a set period, such as a month.
+## Overview
+This app parses a WhatsApp chat used as a ledger for tracking transactions between people. It's designed to automate the process of reviewing group chats where participants record payments, allowing for easy end-of-month calculations to determine outstanding balances.
 
-How It Works
-The app reads an exported WhatsApp chat file.
-It scans for numbers in messages and sums them up according to specific rules.
-The person who writes a message with a number is considered to have "lent" money to the other members of the chat on that occasion.
-User Responsibilities
-To ensure accurate parsing, users must follow these simple rules when using WhatsApp as a transaction ledger:
+## Features
+- Reads and parses exported WhatsApp chat data.
+- Sums the numbers present in messages to show who owes whom.
+- Simple rules for data entry ensure accurate balance tracking.
 
-Each message should contain only one number.
-The person writing the message is assumed to have paid or "lent" money to the other participants.
-Usage
-Export the WhatsApp chat from your group conversation.
-Run the app with the exported chat as input.
-Review the calculated totals to see who owes money and how much.
-Note: The accuracy of the app depends on following the outlined rules. Users are responsible for ensuring that only one number is present per message and that the context of each message follows the lending/borrowing convention described.
+## How It Works
+1. **Chat Export**: Export the relevant WhatsApp chat and provide it as input to the app.
+2. **Transaction Parsing**:
+   - Each message should contain only one number.
+   - The sender of the message is considered to have "lent" money to other person.
+3. **Calculations**: The app sums the amounts and shows the balances, making it easy to track who owes whom.
 
-License
-Feel free to use and modify the app as needed.
+## User Guidelines
+- **One number per message**: Ensure that each message contains only a single number representing the amount.
+- **Sender responsibility**: The sender of the message is assumed to have paid or "lent" the stated amount to the other person.
+
+## Usage Steps
+1. Export the WhatsApp chat.
+2. Run the app with the exported zip file.
+3. Review the calculated totals to determine the end-of-period balances.
+
+## Notes
+- The app relies on users following the outlined rules for accurate parsing.
+- Users should confirm that messages are formatted correctly to avoid discrepancies.
+
+## License
+Feel free to use, modify, and contribute to this app as needed.
